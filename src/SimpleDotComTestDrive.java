@@ -16,13 +16,5 @@ public class SimpleDotComTestDrive {
         //вызываем метод проверки
         String result = dot.checkYourSelf(userGuess);
 
-        String testResult = "Неудача";
-
-        if (result.equals("Попал")) {
-            testResult = "Пройден";
-        }
-
-        System.out.println(testResult);
-
     }
 }
