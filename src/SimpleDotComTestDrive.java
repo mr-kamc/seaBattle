@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class SimpleDotComTestDrive {
     public static void main(String[] args) {
 
@@ -10,8 +12,10 @@ public class SimpleDotComTestDrive {
         //размещаем местоположение через сеттер
         dot.setLocationCells(locations);
 
-        //делаем ход от имени пользователя
-        String userGuess = "2";
+        //Получаем ответ от пользователя
+        Scanner scanner = new Scanner(System.in);
+        String userGuess = scanner.nextLine();
+
 
         //вызываем метод проверки
         String result = dot.checkYourSelf(userGuess);
